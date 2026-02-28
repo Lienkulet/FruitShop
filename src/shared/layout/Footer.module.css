@@ -1,0 +1,157 @@
+.footer {
+  position: relative;
+  margin-top: 8rem;
+  margin-left: calc(50% - 50vw);
+  margin-right: calc(50% - 50vw);
+  background: #313238;
+  color: #f5f5f5;
+  padding: 8.2rem 1rem 3rem;
+  overflow: hidden;
+}
+
+.inner {
+  width: min(1320px, calc(100% - 2.5rem));
+  margin: 0 auto;
+  display: grid;
+  grid-template-columns: 1.5fr 0.8fr 1fr 1.2fr;
+  gap: 2.5rem;
+}
+
+.aboutCol p {
+  margin-top: 1.65rem;
+  color: rgba(245, 245, 245, 0.64);
+  line-height: 1.58;
+  max-width: 440px;
+  font-size: 1.06rem;
+}
+
+.socials {
+  margin-top: 1.8rem;
+  display: flex;
+  gap: 0.7rem;
+  flex-wrap: wrap;
+}
+
+.socials a {
+  width: 46px;
+  height: 46px;
+  border-radius: 9px;
+  display: inline-flex;
+  align-items: center;
+  justify-content: center;
+  /* background: #f8a341; */
+  background: transparent;
+  color: #F85559;
+  font-size: 1.3rem;
+  font-weight: 700;
+  transition: transform 160ms ease, filter 160ms ease;
+}
+
+.socials a:hover {
+  transform: translateY(-2px);
+  filter: brightness(1.04);
+}
+
+.navCol h3,
+.contactCol h3 {
+  color: #F85559;
+  font-size: 1.3rem;
+  font-weight: 800;
+}
+
+.footerLinks {
+  margin-top: 1.3rem;
+  display: grid;
+  gap: 1rem;
+}
+
+.footerLinks a {
+  color: #f4f4f4;
+  font-weight: 700;
+  font-size: 1rem;
+  width: fit-content;
+}
+
+.contactBlock {
+  margin-top: 1.2rem;
+}
+
+.contactBlock h4 {
+  font-size: 1rem;
+  font-weight: 800;
+  color: #f4f4f4;
+}
+
+.contactBlock p {
+  margin-top: 0.35rem;
+  color: rgba(245, 245, 245, 0.62);
+  font-size: 1rem;
+}
+
+.subscribeCol h3 {
+  font-size: 0.5rem;
+  line-height: 1.2;
+  text-align: center;
+  max-width: 420px;
+  margin-inline: auto;
+}
+
+.subscribeCol h3 span {
+  color: #F85559;
+}
+
+.subscribeForm {
+  margin-top: 2rem;
+  display: grid;
+  gap: 1rem;
+}
+
+.subscribeForm input {
+  height: 76px;
+  border-radius: 10px;
+  border: 1px solid #4a4a4d;
+  background: #3b3b40;
+  color: #fff;
+  padding: 0 1.25rem;
+  font-size: 1.2rem;
+  outline: none;
+}
+
+.subscribeForm input::placeholder {
+  color: rgba(255, 255, 255, 0.45);
+}
+
+.subscribeForm button {
+  height: 78px;
+  border-radius: 10px;
+  background: #F85559;
+  color: #fff;
+  font-size: 1.8rem;
+  font-weight: 800;
+}
+
+@media (max-width: 1200px) {
+  .inner {
+    grid-template-columns: 1fr 1fr;
+    gap: 2rem;
+  }
+
+  .subscribeCol {
+    grid-column: 1 / -1;
+  }
+}
+
+@media (max-width: 760px) {
+  .footer {
+    padding-top: 6.5rem;
+  }
+
+  .inner {
+    width: calc(100% - 1rem);
+    grid-template-columns: 1fr;
+  }
+
+  .subscribeForm button {
+    font-size: 1.4rem;
+  }
+}
